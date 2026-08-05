@@ -35,6 +35,7 @@ The **OSI (Open Systems Interconnection) Model** is a standardized reference mod
 6. Data Link Layer
 7. Physical Layer
 
+<img src= "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/OSI.png" alt = "OSI">
 ---
 
 ## 1. Application Layer
