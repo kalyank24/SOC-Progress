@@ -138,3 +138,55 @@ Its primary function is to convert binary data into signals and transmit them ac
 * IP addresses are used for logical addressing, whereas MAC addresses are used for physical addressing.
 * Understanding the OSI Model helps SOC Analysts troubleshoot network issues and analyze network traffic effectively.
 </p>
+
+<hr>
+
+# Encapsulation and Decapsulation
+
+## Encapsulation
+
+As data moves down through each layer of the OSI Model, every layer adds its own information to the data. This additional information contains details specific to that layer, allowing the receiving device to process the data correctly.
+
+This process is known as **encapsulation**.
+
+The name of the data changes as it moves through the layers:
+
+| OSI Layer          | Data Unit                      |
+| ------------------ | ------------------------------ |
+| Application Layer  | Data                           |
+| Presentation Layer | Data                           |
+| Session Layer      | Data                           |
+| Transport Layer    | Segment (TCP) / Datagram (UDP) |
+| Network Layer      | Packet                         |
+| Data Link Layer    | Frame                          |
+| Physical Layer     | Bits                           |
+
+### Layer-by-Layer Process
+
+* In the **Application**, **Presentation**, and **Session** layers, the information is simply referred to as **data**.
+* When the data reaches the **Transport Layer**, it becomes:
+
+  * **Segment** if **TCP** is used.
+  * **Datagram** if **UDP** is used.
+* At the **Network Layer**, the data is called a **packet**.
+* At the **Data Link Layer**, the packet is encapsulated into a **frame** by adding both a **header** and a **trailer**. The trailer contains error-checking information that helps detect whether the data has been corrupted during transmission.
+* Finally, at the **Physical Layer**, the frame is converted into **bits** and transmitted across the physical medium.
+
+---
+
+## Decapsulation
+
+When the data reaches the destination device, the process is reversed.
+
+As the data moves upward through the OSI layers, each layer removes the information (headers and, where applicable, the trailer) that was added during encapsulation. This continues until the original data reaches the **Application Layer**.
+
+This reverse process is known as **decapsulation**.
+
+---
+
+## Key Takeaways
+
+* **Encapsulation** is the process of adding protocol-specific information to data as it travels down the OSI Model.
+* Each layer adds its own header, while the **Data Link Layer** adds both a header and a trailer.
+* The trailer is primarily used for **error detection**, helping identify whether the frame has been corrupted during transmission.
+* **Decapsulation** is the reverse process, where the receiving device removes the headers and trailer to recover the original data.
