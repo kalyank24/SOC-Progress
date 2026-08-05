@@ -1,6 +1,9 @@
 
 <h1>Introductry Networking</h1>
 
+
+<img src="" alt="Introductry Networking">
+
 <p># Computer Networking Basics
 
 ## Overview
