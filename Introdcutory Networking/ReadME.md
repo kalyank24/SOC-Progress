@@ -194,3 +194,5 @@ This reverse process is known as **decapsulation**.
 * Each layer adds its own header, while the **Data Link Layer** adds both a header and a trailer.
 * The trailer is primarily used for **error detection**, helping identify whether the frame has been corrupted during transmission.
 * **Decapsulation** is the reverse process, where the receiving device removes the headers and trailer to recover the original data.
+
+<img src = "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/Encapsulation.png" alt ="Encapsulation">
