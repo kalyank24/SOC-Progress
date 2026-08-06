@@ -335,4 +335,46 @@ In Unix, it operates over **UDP**. In Windows, it operates similarly to the **pi
 
 Initially, any request you make passes through the gateway. Traceroute returns information such as the number of hops it took to reach the destination and the time taken to reach each hop.
 
+<br>
+
+# WHOIS
+
+**WHOIS** is a protocol that allows you to query information about a registered domain name. It provides details such as the domain owner (if publicly available), registrar name, registration date, renewal date, expiration date, and other domain-related information.
+
+**Example:**
+
+```bash
+whois facebook.com
+```
+
+The output includes information about the domain registration, registrar, name servers, and important registration dates.
+
+---
+
+# DIG
+
+**DNS (Domain Name System)** is used to convert domain names into IP addresses. When a user accesses a webpage using its domain name, the request is first sent to a **recursive DNS server**. The address of this server is usually configured automatically by your router or computer.
+
+Many ISPs maintain their own recursive DNS servers. These servers also maintain a cache of frequently accessed domain names. If the requested website is not found in the cache, the request is forwarded to the **Root Name Server**.
+
+The Root Name Server keeps track of the DNS servers at the next level and redirects the request to the appropriate **Top-Level Domain (TLD) Server**.
+
+TLD servers are organized based on domain extensions. For example, if you search for **tryhackme.com**, your request is redirected to the TLD server responsible for **.com** domains. The TLD server then directs the request to the appropriate **Authoritative Name Server**, which contains the DNS records for that domain.
+
+Using the **dig** command, we can manually specify the DNS server that should be used to resolve the domain name.
+
+**Example:**
+
+```bash
+dig google.com @8.8.8.8
+```
+
+In this example, **8.8.8.8** is Google's public DNS server.
+
+The output displays information about the requested domain, including its IP address, DNS records, and **TTL (Time To Live)** value.
+
+The DNS server stores the domain information in its cache based on the TTL value. Once the TTL expires, the DNS server queries the recursive server again instead of using the locally cached information.
+
+TTL is measured in **seconds**.
+
 
