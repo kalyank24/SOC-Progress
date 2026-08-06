@@ -2,7 +2,7 @@
 <h1>Introductry Networking</h1>
 
 
-<img src="https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/Introductry.png" alt="Introductry Networking">
+<img src="https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/images/Introductry.png" alt="Introductry Networking">
 
 <p># Computer Networking Basics
 
