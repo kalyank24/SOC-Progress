@@ -310,3 +310,29 @@ Since `ping` is included with almost every operating system, it is one of the mo
 * TCP establishes reliable communication using the **Three-Way Handshake** (SYN → SYN/ACK → ACK).
 * The `ping` command uses ICMP to test network connectivity and measure response times.
 
+
+<br>
+
+# Traceroute
+
+**Traceroute** can be used to map the path your request takes as it heads to the destination. If we enter a website, the request will pass through several servers. Traceroute allows you to see those connections. It enables you to view every intermediate step between your computer and the resource that you requested.
+
+## Basic Syntax
+
+**Unix:**
+
+```bash
+traceroute <destination>
+```
+
+**Windows:**
+
+```cmd
+tracert <destination>
+```
+
+In Unix, it operates over **UDP**. In Windows, it operates similarly to the **ping** utility, using the **ICMP** protocol.
+
+Initially, any request you make passes through the gateway. Traceroute returns information such as the number of hops it took to reach the destination and the time taken to reach each hop.
+
+
