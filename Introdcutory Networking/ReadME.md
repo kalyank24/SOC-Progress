@@ -196,3 +196,117 @@ This reverse process is known as **decapsulation**.
 * **Decapsulation** is the reverse process, where the receiving device removes the headers and trailer to recover the original data.
 
 <img src = "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/Encapsulation.png" alt ="Encapsulation">
+
+<br>
+
+# TCP/IP Model
+
+## Overview
+
+The **TCP/IP (Transmission Control Protocol/Internet Protocol) Model** is the foundation of modern networking and is widely used in real-world communication. While it is similar to the OSI Model, it simplifies the networking process into **four layers**.
+
+## TCP/IP Layers
+
+1. Application Layer
+2. Transport Layer
+3. Internet Layer
+4. Network Interface Layer
+
+### OSI Model vs. TCP/IP Model
+
+| OSI Model    | TCP/IP Model      |
+| ------------ | ----------------- |
+| Application  | Application       |
+| Presentation | Application       |
+| Session      | Application       |
+| Transport    | Transport         |
+| Network      | Internet          |
+| Data Link    | Network Interface |
+| Physical     | Network Interface |
+
+Just like the OSI Model, the TCP/IP Model follows the processes of **encapsulation** and **decapsulation**.
+
+* During **encapsulation**, each layer adds its own protocol-specific header to the data before passing it to the next layer.
+* During **decapsulation**, the receiving device removes these headers layer by layer until the original data reaches the application.
+
+---
+
+# TCP Three-Way Handshake
+
+When discussing the TCP/IP Model, we are also referring to a **suite of communication protocols**. One of the most important protocols is **TCP (Transmission Control Protocol)**.
+
+TCP is a **connection-oriented protocol**, meaning it establishes a reliable connection between the sender and receiver before transmitting data.
+
+This connection is established through a process called the **TCP Three-Way Handshake**.
+
+## Steps of the Three-Way Handshake
+
+### Step 1 – SYN
+
+The client initiates the connection by sending a **SYN (Synchronize)** packet to the server.
+
+### Step 2 – SYN + ACK
+
+The server acknowledges the client's request by responding with a **SYN + ACK (Synchronize + Acknowledge)** packet.
+
+### Step 3 – ACK
+
+The client sends an **ACK (Acknowledge)** packet back to the server, completing the handshake and establishing the connection.
+
+Once the connection is established, data transmission begins.
+
+Because TCP is a reliable protocol, any data that is lost or corrupted during transmission is retransmitted, ensuring accurate and complete delivery.
+
+---
+
+# Ping
+
+The **ping** command is a basic network diagnostic tool used to verify whether a remote host or device is reachable over a network.
+
+It can also be used to test connectivity with other devices on a local network, provided they are configured to respond to ICMP requests.
+
+## Protocol Used
+
+The `ping` command uses the **Internet Control Message Protocol (ICMP)**.
+
+* **OSI Model:** Network Layer
+* **TCP/IP Model:** Internet Layer
+
+## Basic Syntax
+
+```bash
+ping <target>
+```
+
+**Example:**
+
+```bash
+ping google.com
+```
+
+## How Ping Works
+
+When a ping command is executed, the system sends **ICMP Echo Request** packets to the target host.
+
+If the target is reachable and configured to respond, it replies with **ICMP Echo Reply** packets. The output typically includes:
+
+* IP address of the target
+* Round-trip time (latency)
+* Number of packets sent and received
+* Packet loss
+* Time To Live (TTL)
+
+When a domain name (such as `google.com`) is used, the system first resolves the domain to its corresponding IP address using DNS before sending the ICMP packets.
+
+Since `ping` is included with almost every operating system, it is one of the most commonly used tools for basic network troubleshooting.
+
+---
+
+## Key Takeaways
+
+* The TCP/IP Model is the practical networking model used on modern networks.
+* It consists of four layers: Application, Transport, Internet, and Network Interface.
+* Encapsulation and decapsulation work similarly to the OSI Model.
+* TCP establishes reliable communication using the **Three-Way Handshake** (SYN → SYN/ACK → ACK).
+* The `ping` command uses ICMP to test network connectivity and measure response times.
+
