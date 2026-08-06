@@ -35,7 +35,7 @@ The **OSI (Open Systems Interconnection) Model** is a standardized reference mod
 6. Data Link Layer
 7. Physical Layer
 
-<img src= "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/OSI.png" alt = "OSI">
+<img src= "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/images/OSI.png" alt = "OSI">
 ---
 
 ## 1. Application Layer
@@ -195,7 +195,7 @@ This reverse process is known as **decapsulation**.
 * The trailer is primarily used for **error detection**, helping identify whether the frame has been corrupted during transmission.
 * **Decapsulation** is the reverse process, where the receiving device removes the headers and trailer to recover the original data.
 
-<img src = "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/Encapsulation.png" alt ="Encapsulation">
+<img src = "https://github.com/kalyank24/SOC-Progress/blob/main/Introdcutory%20Networking/images/Encapsulation.png" alt ="Encapsulation">
 
 <br>
 
