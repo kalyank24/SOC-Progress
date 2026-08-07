@@ -96,6 +96,18 @@ Subnetting uses IP addresses to:
 2. Identify the **Host Address**
 3. Identify the **Default Gateway**
 
+<br>
+
+# Address Resolution Protocol (ARP)
+
+**Address Resolution Protocol (ARP)** allows a device to associate a **MAC address** with an **IP address** on a local network. Each device on a local network maintains a table of MAC addresses associated with IP addresses, known as the **ARP cache**.
+
+If a device wants to find the MAC address of a device with the IP address **192.168.0.33**, it sends a broadcast message to all devices on the network, known as an **ARP Request**.
+
+The device with the corresponding IP address responds with an **ARP Reply** containing its MAC address. This information is then stored in the local **ARP cache** for future communication.
+
+ARP works only within a **local network (LAN)** and is not used to resolve addresses across different networks.
+
 
 
 
