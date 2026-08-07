@@ -75,3 +75,27 @@ Multiple switches and routers can also be connected together. This reduces netwo
 A **router** is a networking device used to connect different networks and enable communication between them.
 
 **Routing** is the process of forwarding data between networks by determining the best available path. This ensures that data is delivered successfully from the source network to the destination network.
+
+<br>
+
+# Subnetting
+
+**Subnetting** is the process of dividing a larger IP network into smaller logical networks called **subnets**. Each subnet allows devices to communicate more efficiently, improving network performance, security, and manageability.
+
+For example, in a business organization, different departments such as **Sales**, **Accounts**, and **Human Resources** can be assigned separate subnets. This helps organize the network, improve security, and reduce unnecessary network traffic.
+
+Network administrators use subnetting to categorize and assign specific parts of a network based on organizational requirements. Subnetting is achieved by dividing the available host addresses within a network, which is represented by a value called the **subnet mask**.
+
+A **subnet mask** is represented as four bytes (32 bits), with each octet ranging from **0 to 255**, or in **CIDR (Classless Inter-Domain Routing)** notation using a forward slash (`/`).
+
+## Uses of Subnetting
+
+Subnetting uses IP addresses to:
+
+1. Identify the **Network Address**
+2. Identify the **Host Address**
+3. Identify the **Default Gateway**
+
+
+
+
