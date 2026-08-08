@@ -108,6 +108,28 @@ The device with the corresponding IP address responds with an **ARP Reply** cont
 
 ARP works only within a **local network (LAN)** and is not used to resolve addresses across different networks.
 
+<br>
+
+# DHCP (Dynamic Host Configuration Protocol)
+
+**DHCP (Dynamic Host Configuration Protocol)** is a network management protocol that automatically assigns an **IP address** and other network configuration details, such as the **subnet mask, default gateway, and DNS server**, to a device when it joins a network.
+
+When a device connects to a network and does not have an IP address assigned, it sends a **DHCP Discover** message as a broadcast to locate an available DHCP server.
+
+The DHCP server listens for **DHCP Discover** messages and responds with a **DHCP Offer**. This offer contains an available IP address and other network configuration details.
+
+If the device accepts the offer, it sends a **DHCP Request** message to the DHCP server, indicating that it wants to use the offered IP address.
+
+Finally, the DHCP server sends a **DHCP Acknowledgment (DHCP ACK)** message to the client, confirming that the IP address has been assigned.
+
+This entire process is known as the **DORA process**:
+
+1. **D – DHCP Discover**
+2. **O – DHCP Offer**
+3. **R – DHCP Request**
+4. **A – DHCP Acknowledgment**
+
+In modern networks, almost every device is configured with a **DHCP client**, allowing it to automatically obtain its network configuration.
 
 
 
