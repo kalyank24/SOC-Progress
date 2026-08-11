@@ -4,7 +4,9 @@
 **DNS (Domain Name System)** is used to convert human-readable domain names into machine-readable IP addresses. It provides a simple way for us to communicate with devices on the internet without having to remember complex numbers.
 
 ---
+<br>
 
+<img src="https://github.com/kalyank24/SOC-Progress/blob/main/DNS%20in%20Detail/images/Hierarchy.png" alt="Hierarchy">
 ## Domain Hierarchy
 
 ### Top-Level Domain (TLD)
