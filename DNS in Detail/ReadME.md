@@ -77,6 +77,8 @@ TXT records have multiple uses. One common use is specifying which servers are a
 
 # Making a DNS Request
 
+<img src="https://github.com/kalyank24/SOC-Progress/blob/main/DNS%20in%20Detail/images/Request.png" alt="Request">
+
 When you request a domain name, the DNS resolution process generally works as follows:
 
 ### 1. Local Cache
